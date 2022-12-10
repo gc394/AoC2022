@@ -48,7 +48,7 @@ for (i in seq_len(length(elf_groups))){
   
   group_of_three = elf_groups[[i]]
   
-  # find common item
+  # find common item by turning each string of items into a vector with unlist and strsplit
   common_item = intersect(intersect(unlist(strsplit(group_of_three[1], '')), unlist(strsplit(group_of_three[2], ''))), unlist(strsplit(group_of_three[3], '')))
   
   # find corresponding value
